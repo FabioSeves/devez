@@ -32,6 +32,10 @@ group :production do
      gem 'rails_12factor'
 end
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> f0dd181b782a13b4d1545bd01fbebd271c8dd709
 gem 'sdoc', '~> 0.4.0',          group: :doc
 
 # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
