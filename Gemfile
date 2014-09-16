@@ -1,6 +1,6 @@
 source 'https://rubygems.org'
 
-
+ gem 'sqlite3'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.1.0'
 # Use sqlite3 as the database for Active Record
@@ -13,6 +13,7 @@ gem 'uglifier', '>= 1.3.0'
 gem 'coffee-rails', '~> 4.0.0'
 # See https://github.com/sstephenson/execjs#readme for more supported runtimes
 # gem 'therubyracer',  platforms: :ruby
+gem 'devise'
 
 # Use jquery as the JavaScript library
 gem 'jquery-rails'
@@ -23,12 +24,16 @@ gem 'bootstrap-sass'
 gem 'jbuilder', '~> 2.0'
 # bundle exec rake doc:rails generates the API under doc/api.
 
+group :development, :test do
+     gem 'sqlite3'
+end
+
+group :production do
+     gem 'pg'
+     gem 'rails_12factor'
+end
 
 
-<<<<<<< HEAD
-=======
-
->>>>>>> f0dd181b782a13b4d1545bd01fbebd271c8dd709
 gem 'sdoc', '~> 0.4.0',          group: :doc
 
 # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
